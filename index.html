@@ -117,7 +117,7 @@
             <div class="outBox" id="b1">
                 <span id="up1" >Online Section</span>
                 <h2>UI/UX design program </h2>
-                <div class="databox">
+                <div id="databox" class="databox">
                     <ul>
                         <li>&#128197; 03 months</li>
                         <li> &nbsp; &#x939; &nbsp;  languages</li>
@@ -129,90 +129,61 @@
                         <li id="up3" > 4 out of 15</li>
                     </ul>
                 </div>
-                <button>Enroll Now</button>
+                <button id="btn-en" >Enroll Now</button>
             </div>
             <!-- <div class="outBox" id="b2">
                 <span>Offline section</span>
                 <button>Enroll Now</button>
             </div> -->
         </div>
-        
     </div>
 
-    <div style="height: 500vh;" ></div>
+    <div id="sec-5">
+        <img src="./asset/img/5726840.jpg" class="imgdff" alt="">
+        <h1>Our UI/UX course contains</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis inventore dolores velit.</p>
+        <h2>UI/UX syllabus</h2>
 
+        <div class="ch-box" id="ch-1" onclick="openChap(1)" >
+            <div class="ch-head">
+                <h3>Chapter - 1</h3>
+                <img src="./asset/share.png" class="shareimg" alt=""> 
+            </div>
+            <ul>
+                
+            </ul>
+        </div>
+
+        <div class="ch-box" id="ch-2" onclick="openChap(2)">
+            <div class="ch-head">
+                <h3>Chapter - 2</h3>
+                <img src="./asset/share.png" class="shareimg" alt="">
+            </div>
+        </div>
+
+        <div class="ch-box" id="ch-3" onclick="openChap(3)">
+            <div class="ch-head">
+                <h3>Chapter - 3</h3>
+                <img src="./asset/share.png" class="shareimg" alt="">
+            </div>
+        </div>
+
+        <div class="ch-box" id="ch-4" onclick="openChap(4)">
+            <div class="ch-head">
+                <h3>Chapter - 4</h3>
+                <img src="./asset/share.png" class="shareimg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div style="height: 500vh;" ></div>
+    <script src="./venila.js"></script>
     <script>
 
-        const bt1 = document.getElementById('bt-1')
-        const bt2 = document.getElementById('bt-2')
-        const up1 = document.getElementById("up1")
-        const up2 = document.getElementById("up2")
-        const up3 = document.getElementById("up3")
-        const b1 = document.getElementById('b1')
-        const word = ['Offline Section','31 aug 2024','10 out of 15']
-        const word1 = ['Online Section','29 june 2024','4 out of 15']
-
-        function toggleBtn1(){
-            bt1.style.backgroundColor = 'white'
-            bt1.style.color = 'black'
-            bt2.style.backgroundColor = 'rgb(0, 110, 253)'
-            bt2.style.color = 'white'
-            up1.innerText = word[0]
-            up2.innerText = word[1]
-            up3.innerText = word[2]
-            b1.style.width = '90%'
-            b1.style.height = '42vh'
-        }
-        function toggleBtn2(){
-            bt2.style.backgroundColor = 'white'
-            bt2.style.color = 'black'
-            bt1.style.backgroundColor = 'rgb(0, 110, 253)'
-            bt1.style.color = 'white'
-            up1.innerText = word1[0]
-            up2.innerText = word1[1]
-            up3.innerText = word1[2]
-            b1.style.width = '85%'
-            b1.style.height = '40vh'
-        }
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-9vh";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2500); // Change image every 2 seconds
-        }
-
+        
 
         </script>
 </body>
