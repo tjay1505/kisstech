@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div id="navbar" class="header">
@@ -19,7 +20,7 @@
         </div>
 
         <div class="menu">
-            <button>SignUp</button>
+            <button><a href="./apply.html">Apply</a></button>
             <img src="./asset/more.png" onclick="openNav()" alt="">
         </div>
     </div>
@@ -39,7 +40,7 @@
         <p >
             Unlock the user psychology and interaction design. step-by-step instruction to design intuitive interfaces. join a community of our crereative and innovator.
         </p>
-        <button>Enroll Now</button>
+        <button><a href="./apply.html">Enroll Now</a></button>
     </div>
 
     <div id="sec-2">
@@ -129,7 +130,7 @@
                         <li id="up3" > 4 out of 15</li>
                     </ul>
                 </div>
-                <button id="btn-en" >Enroll Now</button>
+                <button id="btn-en" ><a href="./apply.html">Apply now</a></button>
             </div>
             <!-- <div class="outBox" id="b2">
                 <span>Offline section</span>
@@ -144,47 +145,115 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis inventore dolores velit.</p>
         <h2>UI/UX syllabus</h2>
 
-        <div class="ch-box" id="ch-1" onclick="openChap(1)" >
-            <div class="ch-head">
+        <div class="ch-box" id="ch-1"  onclick="openChap(1)" >
+            <div class="ch-head" id="ch-h-1">
                 <h3>Chapter - 1</h3>
-                <img src="./asset/share.png" class="shareimg" alt=""> 
+                <img src="./asset/down-arrow.png" class="shareimg" alt=""> 
             </div>
             <ul>
-                
+                <li>boc</li>
+                <li>vov</li>
+                <li>flgl</li>
+                <li>flgl</li>
+                <li>flgl</li>
             </ul>
         </div>
 
         <div class="ch-box" id="ch-2" onclick="openChap(2)">
-            <div class="ch-head">
+            <div class="ch-head" id="ch-h-2">
                 <h3>Chapter - 2</h3>
-                <img src="./asset/share.png" class="shareimg" alt="">
+                <img src="./asset/down-arrow.png" class="shareimg" alt="">
             </div>
+            <ul>
+                <li>boc</li>
+                <li>vov</li>
+                <li>flgl</li>
+                <li>flgl</li>
+                <li>flgl</li>
+            </ul>
         </div>
 
         <div class="ch-box" id="ch-3" onclick="openChap(3)">
-            <div class="ch-head">
+            <div class="ch-head" id="ch-h-3">
                 <h3>Chapter - 3</h3>
-                <img src="./asset/share.png" class="shareimg" alt="">
+                <img src="./asset/down-arrow.png" class="shareimg" alt="">
             </div>
+            <ul>
+                <li>boc</li>
+                <li>vov</li>
+                <li>flgl</li>
+                <li>flgl</li>
+                <li>flgl</li>
+            </ul>
         </div>
 
         <div class="ch-box" id="ch-4" onclick="openChap(4)">
-            <div class="ch-head">
+            <div class="ch-head" id="ch-h-4">
                 <h3>Chapter - 4</h3>
-                <img src="./asset/share.png" class="shareimg" alt="">
+                <img src="./asset/down-arrow.png" class="shareimg" alt="">
             </div>
+            <ul>
+                <li>boc</li>
+                <li>vov</li>
+                <li>flgl</li>
+                <li>flgl</li>
+                <li>flgl</li>
+            </ul>
         </div>
 
     </div>
 
+    <div id="sec-6">
+        <p>get train through</p>
+        <h1>Designing Tools</h1>
+        <div class="img-box-d">
+            <img src="./asset/tool/figma.png" alt="" class="imgicon" >
+            <img src="./asset/tool/illustrator.png" alt="" class="imgicon">
+            <img src="./asset/tool/layers.png" alt="" class="imgicon">
+            <img src="./asset/tool/mobile-app-development.png" alt="" class="imgicon2">
+            <img src="./asset/tool/ux-design.png" class="imgicon2" alt="">
+            <img src="./asset/tool/xd.png" class="imgicon2" alt="">
+        </div>
+    </div>
+
+    <div id="project">
+        <h1>hand-On projects</h1>
+        <img src="./asset/img/project-management-planning-development-message-box-notification-graphic.jpg" alt="">
+        <a href="./project.html">Explore projects &rarr;	</a>
+    </div>
+
+    <div id="sec-7">
+        <p>let's apply</p>
+        <h1>Course Fee sturcture</h1>
+        <p>made it's simple affordable</p>
+        <div class="feebox">
+            <div class="feeinbox">
+                <div class="fee-on">
+                    <h3>Online</h3>
+                    <p>EMi option avilable</p>
+                    <p>refer a Student and get 5% - 10% discount</p>
+                    <p>flexiable timeline </p>
+                    <h1>RS.9000 /-</h1>
+                    <p>inlcudes of GST</p>
+                    <button><a href="./apply.html">Apply now</a></button>
+                </div>
+                <div class="fee-off">
+                    <h3>Offline</h3>
+                    <p>EMi option avilable</p>
+                    <p>refer a Student and get 5% - 10% discount</p>
+                    <p>flexiable timeline </p>
+                    <h1>RS.15000 /-</h1>
+                    <p>inlcudes of GST</p>
+                    <button><a href="./apply.html">Apply now</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <div style="height: 500vh;" ></div>
+    
     <script src="./venila.js"></script>
-    <script>
+    <script src="./gsap.js"></script>
 
-        
-
-        </script>
 </body>
 </html>
