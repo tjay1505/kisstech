@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
     <div id="navbar" class="header">
 
@@ -20,27 +22,35 @@
         </div>
 
         <div class="menu">
-            <button><a href="./apply.html">Apply</a></button>
+            <button><a href="#applyform">Apply</a></button>
             <img src="./asset/more.png" onclick="openNav()" alt="">
         </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
+        <a href="#sec-4" onclick="closeNav()">Upcoming batches</a>
+        <a href="#sec-5" onclick="closeNav()">Syllabus</a>
+        <a href="#project" onclick="closeNav()">projects</a>
+        <a href="#sec-7" onclick="closeNav()">fee sturcture</a>
+        <a href="#applyform" onclick="closeNav()">Apply now</a>
+        <a href="#footer" onclick="closeNav()">contact</a>
+    </div>
+    
+    
+        <a href="#" ><img id="whatsapp" src="./asset/tool/whatsapp (1).png" alt=""></a>
+        <a href="#" ><img id="callph" src="./asset/tool/telephone.png" alt=""></a>
 
     <div id="sec-1">
         <h1>
-            Start your world class UI/UX design  training. Enroll in  <span style="color: rgb(0, 110, 253);" >Kiss-tech</span>  today.
+            Start your world class UI/UX design training. Enroll in <span
+                style="color: rgb(0, 110, 253);">Kiss-tech</span> today.
         </h1>
-        <p >
-            Unlock the user psychology and interaction design. step-by-step instruction to design intuitive interfaces. join a community of our crereative and innovator.
+        <p>
+            Unlock the user psychology and interaction design. step-by-step instruction to design intuitive interfaces.
+            join a community of our crereative and innovator.
         </p>
-        <button><a href="./apply.html">Enroll Now</a></button>
+        <button><a href="#applyform">Enroll Now</a></button>
     </div>
 
     <div id="sec-2">
@@ -48,21 +58,21 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="./asset/img/female-web-designer-office-with-laptop.jpg" style="width:100%">
-            <div class="text">Expert in mentor</div>
+                <div class="numbertext"></div>
+                <img src="./asset/img/female-web-designer-office-with-laptop.jpg" style="width:100%">
+                <div class="text">Expert in mentor</div>
             </div>
 
             <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="./asset/img/pointing-data (1).jpg" style="width:100%">
-            <div class="text">World class coaching</div>
+                <div class="numbertext"></div>
+                <img src="./asset/img/pointing-data (1).jpg" style="width:100%">
+                <div class="text">World class coaching</div>
             </div>
 
             <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img src="./asset/img/portrait-young-afro-american-man-sunglasses.jpg" style="width:100%">
-            <div class="text">Upto 21-LPA package </div>
+                <div class="numbertext"></div>
+                <img src="./asset/img/portrait-young-afro-american-man-sunglasses.jpg" style="width:100%">
+                <div class="text">Upto 21-LPA package </div>
             </div>
 
             <div class="mySlides fade">
@@ -86,15 +96,15 @@
         <br>
 
         <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span>
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
 
-          
+
     </div>
 
     <div id="sec-3">
@@ -110,27 +120,29 @@
 
     <div id="sec-4">
         <h1>Upcoming Batches</h1>
-        <p>Find the latest updates for our classes - combining the world class Offline and online classes to experience</p>
+        <p>Find the latest updates for our classes - combining the world class Offline and online classes to experience
+        </p>
         <div class="btn-toggle">
-            <button id="bt-1" onclick="toggleBtn2()" >Online</button><button id="bt-2" onclick="toggleBtn1()" >Offline</button>
+            <button id="bt-1" onclick="toggleBtn2()">Online</button><button id="bt-2"
+                onclick="toggleBtn1()">Offline</button>
         </div>
         <div class="coverBox">
             <div class="outBox" id="b1">
-                <span id="up1" >Online Section</span>
+                <span id="up1">Online Section</span>
                 <h2>UI/UX design program </h2>
                 <div id="databox" class="databox">
                     <ul>
                         <li>&#128197; 03 months</li>
-                        <li> &nbsp; &#x939; &nbsp;  languages</li>
+                        <li> &nbsp; &#x939; &nbsp; languages</li>
                         <li> &#127920; &nbsp; Solts</li>
                     </ul>
                     <ul>
-                        <li id="up2" > 29 june 2024</li>
+                        <li id="up2"> 29 june 2024</li>
                         <li> tamil/English</li>
-                        <li id="up3" > 4 out of 15</li>
+                        <li id="up3"> 4 out of 15</li>
                     </ul>
                 </div>
-                <button id="btn-en" ><a href="./apply.html">Apply now</a></button>
+                <button id="btn-en"><a href="#applyform">Apply now</a></button>
             </div>
             <!-- <div class="outBox" id="b2">
                 <span>Offline section</span>
@@ -145,17 +157,16 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis inventore dolores velit.</p>
         <h2>UI/UX syllabus</h2>
 
-        <div class="ch-box" id="ch-1"  onclick="openChap(1)" >
+        <div class="ch-box" id="ch-1" onclick="openChap(1)">
             <div class="ch-head" id="ch-h-1">
                 <h3>Chapter - 1</h3>
-                <img src="./asset/down-arrow.png" class="shareimg" alt=""> 
+                <img src="./asset/down-arrow.png" class="shareimg" alt="">
             </div>
             <ul>
-                <li>boc</li>
-                <li>vov</li>
-                <li>flgl</li>
-                <li>flgl</li>
-                <li>flgl</li>
+                <li>What is UX Design?</li>
+                <li>What is Interaction Design</li>
+                <li>UX Design Deliverables</li>
+                <li>Basics of HCI </li>
             </ul>
         </div>
 
@@ -165,11 +176,11 @@
                 <img src="./asset/down-arrow.png" class="shareimg" alt="">
             </div>
             <ul>
-                <li>boc</li>
-                <li>vov</li>
-                <li>flgl</li>
-                <li>flgl</li>
-                <li>flgl</li>
+                <li>User Centered Design</li>
+                <li>Design Thinking</li>
+                <li>Activity Based Design</li>
+                <li>Agile Process</li>
+                <li>Competitor Analyse</li>
             </ul>
         </div>
 
@@ -179,11 +190,11 @@
                 <img src="./asset/down-arrow.png" class="shareimg" alt="">
             </div>
             <ul>
-                <li>boc</li>
-                <li>vov</li>
-                <li>flgl</li>
-                <li>flgl</li>
-                <li>flgl</li>
+                <li>Stakeholder & User Interviews</li>
+                <li>Creating Personas</li>
+                <li>Empathy Mapping</li>
+                <li>Information Architecture</li>
+                <li>Building User Journey</li>
             </ul>
         </div>
 
@@ -193,11 +204,11 @@
                 <img src="./asset/down-arrow.png" class="shareimg" alt="">
             </div>
             <ul>
-                <li>boc</li>
-                <li>vov</li>
-                <li>flgl</li>
-                <li>flgl</li>
-                <li>flgl</li>
+                <li>Ideation Methods</li>
+                <li>Interaction & Prototyping</li>
+                <li>Paper & Digital Prototyping</li>
+                <li>Heuristic (Expert) Evaluation</li>
+                <li>Design a Web / Mobile App</li>
             </ul>
         </div>
 
@@ -207,7 +218,7 @@
         <p>get train through</p>
         <h1>Designing Tools</h1>
         <div class="img-box-d">
-            <img src="./asset/tool/figma.png" alt="" class="imgicon" >
+            <img src="./asset/tool/figma.png" alt="" class="imgicon">
             <img src="./asset/tool/illustrator.png" alt="" class="imgicon">
             <img src="./asset/tool/layers.png" alt="" class="imgicon">
             <img src="./asset/tool/mobile-app-development.png" alt="" class="imgicon2">
@@ -219,7 +230,7 @@
     <div id="project">
         <h1>hand-On projects</h1>
         <img src="./asset/img/project-management-planning-development-message-box-notification-graphic.jpg" alt="">
-        <a href="./project.html">Explore projects &rarr;	</a>
+        <a href="./project.html">Explore projects &rarr; </a>
     </div>
 
     <div id="sec-7">
@@ -235,7 +246,7 @@
                     <p>flexiable timeline </p>
                     <h1>RS.9000 /-</h1>
                     <p>inlcudes of GST</p>
-                    <button><a href="./apply.html">Apply now</a></button>
+                    <button><a href="#applyform">Apply now</a></button>
                 </div>
                 <div class="fee-off">
                     <h3>Offline</h3>
@@ -244,16 +255,65 @@
                     <p>flexiable timeline </p>
                     <h1>RS.15000 /-</h1>
                     <p>inlcudes of GST</p>
-                    <button><a href="./apply.html">Apply now</a></button>
+                    <button><a href="#applyform">Apply now</a></button>
                 </div>
             </div>
         </div>
     </div>
 
+    <div id="sec-8">
+        <h1>Apply Now</h1>
+        <p>Next batch - Weekend 22 June 2024 & Weekday 9 July 2024.We have very limited seats in each batch.</p>
 
-    
+        <div id="applyform">
+            <div class="in">
+                <label for="name">Name</label>
+                <input type="text">
+            </div>
+            <div class="in">
+                <label for="email">E-mail</label>
+                <input type="text">
+            </div>
+            <div class="in">
+                <label for="num">ph number</label>
+                <input type="text">
+            </div>
+            <button>Apply Now</button>
+        </div>
+
+        <p>We don’t share your data. Read our Privacy Policy. Once you submit, will contact you immediately.</p>
+
+        <div id="footer">
+            <h3>Location</h3>
+            <p>No.33, rolls Apart , nugambakkam , chennai 600097</p>
+            <h5>contact number : 904282422</h5>
+            <div class="social">
+                <img src="./asset/tool/instagram.png" alt="">
+                <img src="./asset/tool/whatsapp.png" alt="">
+                <img src="./asset/tool/message.png" alt="">
+                <img src="./asset/tool/twitter.png" alt="">
+                <img src="./asset/tool/social-media.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cumque ex temporibus architecto vero
+                molestias.</p>
+            <p style="margin-bottom: 5%; width: 100%; text-align: center;">copyright @ tj | 2024 </p>
+        </div>
+    </div>
+
+    <div id="pageloader" class="container">
+        <div class="loading-wave">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+        </div>
+        <h1>KISS-TECH</h1>
+    </div>
+
+
     <script src="./venila.js"></script>
     <script src="./gsap.js"></script>
 
 </body>
+
 </html>

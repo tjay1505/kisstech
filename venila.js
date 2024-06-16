@@ -43,8 +43,12 @@ const bt1 = document.getElementById('bt-1')
         var currentScrollPos = window.pageYOffset;
           if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "0";
+           document.getElementById("whatsapp").style.left = "-9vmax";
+           document.getElementById("callph").style.left = "-9vmax";
           } else {
             document.getElementById("navbar").style.top = "-9vh";
+            document.getElementById("whatsapp").style.left = "2vmax";
+            document.getElementById("callph").style.left = "2vmax";
           }
           prevScrollpos = currentScrollPos;
         }
@@ -174,7 +178,7 @@ function openChap(s){
           ch1.style.height = "25vmin"
           ch2.style.height = "25vmin"
           ch3.style.height = "25vmin"
-          ch4.style.height = "40vh"
+          ch4.style.height = "max-content"
         }
         else{
           chh4.classList.remove('clrtoggle')
@@ -194,4 +198,22 @@ function openChap(s){
         ch4.style.height = "25vmin"
         break;
     }
+}
+ setTimeout(() => {
+   document.getElementById('pageloader').style.display = 'none'
+},7000)
+
+document.querySelector('#pageloader').addEventListener('wheel', preventScroll);
+function preventScroll(e){
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+}
+
+window.onload = function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  setTimeout(() => {
+    document.getElementById('pageloader').style.display = 'none'
+ },7000) 
 }
